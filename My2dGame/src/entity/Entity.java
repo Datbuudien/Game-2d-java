@@ -18,7 +18,7 @@ import javax.imageio.ImageIO;
 
 import main.GamePanel;
 import main.UtilityTool;
-
+import main.Disk;
 
 public class Entity {
 	GamePanel gp;
@@ -26,7 +26,7 @@ public class Entity {
 	public String name;
 	
 	public boolean collision = false;
-	
+//	public String Disk = "F:\\\\";
 	
     public int WorldX,WorldY; // position player/npcs... in  worldmap
     public int speed;
@@ -76,7 +76,8 @@ public class Entity {
     public Entity attacker;
 	public Entity loot;
 	public boolean opened = false;
-    
+   
+	
     //CHARACTER STATES
     public int maxLife;
     public int life;
@@ -825,7 +826,8 @@ public class Entity {
     	UtilityTool utoTool = new UtilityTool();
     	BufferedImage Image = null;
     	try {
-    		Image = ImageIO.read(new File("F:\\java-project-group-8\\My2dGame\\res\\"+imagePath));
+    		Image = ImageIO.read(new File(Disk.name +"java-project-group-8\\My2dGame\\res\\"+imagePath));
+    		
     		Image = utoTool.scaleImage(Image, width, height);
     		
     	}catch(IOException e) {

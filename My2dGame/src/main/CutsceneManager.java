@@ -28,13 +28,14 @@ public class CutsceneManager {
 	
 	public CutsceneManager(GamePanel gp) {
 		this.gp = gp;
-		endCredit = "Program/Music/Art\n"
-				+ "Inspired of RyiSnow and Team 13"
+		endCredit = "End game\n"
+				+ "Group 8"
 				+ "\n\n\n\n\n\n\n\n\n\n\n\n"
-				+ "Someone\n"
-				+ "Someone\n"
-				+ "Someone\n"
-				+ "Someone\n\n\n\n\n"
+				+ "Dat\n"
+				+ "Khoi\n"
+				+ "Hieu\n"
+				+ "Thuat\n"
+				+ "Vinh\n\n\n\n\n"
 				+"Thank you for playing !";
 	}
 	

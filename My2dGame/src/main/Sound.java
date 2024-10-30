@@ -7,7 +7,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.FloatControl;
-
+import main.Disk;
 public class Sound {
 	
 	Clip clip;
@@ -17,29 +17,29 @@ public class Sound {
 	float volume;
 	public Sound() {
 		
-		soundURL[0] =  new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\BlueBoyAdventure.wav");
-		soundURL[1] =  new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\coin.wav");
-		soundURL[2] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\powerup.wav");
-		soundURL[3] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\unlock.wav");
-		soundURL[4] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\fanfare.wav");
-		soundURL[5] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\hitmonster.wav");
-		soundURL[6] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\receivedamage.wav");
-		soundURL[7] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\216675__hitrison__stick-swoosh-whoosh (1).wav");
-		soundURL[8] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\powerup.wav");
-		soundURL[9] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\cursor.wav");
-		soundURL[10] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\burning.wav");
-		soundURL[11] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\cuttree.wav");
-		soundURL[12] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\gameover.wav");
-		soundURL[13] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\stairs.wav");
-		soundURL[14] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\sleep.wav");
-		soundURL[15] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\blocked.wav");
-		soundURL[16] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\parry.wav");
-		soundURL[17] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\speak.wav");
-		soundURL[18] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\Merchant.wav");
-		soundURL[19] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\Dungeon.wav");
-		soundURL[20] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\chipwall.wav");
-		soundURL[21] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\dooropen.wav");
-		soundURL[22] = new File("F:\\java-project-group-8\\My2dGame\\res\\sound\\FinalBattle.wav");
+		soundURL[0] =  new File(Disk.name+ "java-project-group-8\\My2dGame\\res\\sound\\BlueBoyAdventure.wav");
+		soundURL[1] =  new File(Disk.name+ "java-project-group-8\\My2dGame\\res\\sound\\coin.wav");
+		soundURL[2] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\powerup.wav");
+		soundURL[3] = new File(Disk.name+ "java-project-group-8\\My2dGame\\res\\sound\\unlock.wav");
+		soundURL[4] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\fanfare.wav");
+		soundURL[5] = new File(Disk.name+ "java-project-group-8\\My2dGame\\res\\sound\\hitmonster.wav");
+		soundURL[6] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\receivedamage.wav");
+		soundURL[7] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\216675__hitrison__stick-swoosh-whoosh (1).wav");
+		soundURL[8] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\powerup.wav");
+		soundURL[9] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\cursor.wav");
+		soundURL[10] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\burning.wav");
+		soundURL[11] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\cuttree.wav");
+		soundURL[12] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\gameover.wav");
+		soundURL[13] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\stairs.wav");
+		soundURL[14] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\sleep.wav");
+		soundURL[15] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\blocked.wav");
+		soundURL[16] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\parry.wav");
+		soundURL[17] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\speak.wav");
+		soundURL[18] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\Merchant.wav");
+		soundURL[19] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\Dungeon.wav");
+		soundURL[20] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\chipwall.wav");
+		soundURL[21] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\dooropen.wav");
+		soundURL[22] = new File(Disk.name+"java-project-group-8\\My2dGame\\res\\sound\\FinalBattle.wav");
 
 	}
 	

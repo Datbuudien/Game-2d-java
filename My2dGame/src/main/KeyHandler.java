@@ -1,17 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package main;
 
 import java.awt.RenderingHints.Key;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
-/**
- *
- * @author Admin
- */
+import main.Disk;
 public class KeyHandler implements KeyListener{
 	GamePanel gp;
     public boolean upPreased,downPreased,rightPreased,leftPreased,enterPreased,shotKeyPressed,spacePreased;
@@ -176,10 +169,10 @@ public class KeyHandler implements KeyListener{
         if(code == KeyEvent.VK_R) {
         	switch(gp.currentMap) {
         	case 0:
-        		gp.TileM.loadMap("D:\\Eclipse_Game2D\\My2dGame\\res\\maps\\worldV3.txt",0);
+        		gp.TileM.loadMap(Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\worldV3.txt",0);
         		break;
         	case 1:
-        		gp.TileM.loadMap("D:\\Eclipse_Game2D\\My2dGame\\res\\maps\\interior01.txt",0);
+        		gp.TileM.loadMap(Disk.name +"java-project-group-8D\\My2dGame\\res\\maps\\interior01.txt",0);
             	break;
         	}
         	

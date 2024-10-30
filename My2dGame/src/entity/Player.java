@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package entity;
-
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Font;
@@ -29,10 +24,7 @@ import object.OBJ_Key;
 import object.OBJ_Shield_Wood;
 import object.OBJ_Sword_Normal;
 
-/**
- *
- * @author Admin
- */
+
 public class Player extends Entity{
   
     KeyHandler keyH;

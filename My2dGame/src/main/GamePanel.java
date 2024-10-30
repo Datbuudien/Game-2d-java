@@ -26,10 +26,7 @@ import javax.swing.JPanel;
 import ai.PathFinder;
 import data.SaveLoad;
 
-/**
- *
- * @author Admin
- */
+
 public class GamePanel extends JPanel implements Runnable{
     // screen settings
     final int originalTileSize = 16; // constant 16x16 : size of chars / map / npcs

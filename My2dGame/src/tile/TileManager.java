@@ -17,6 +17,7 @@ import javax.imageio.ImageIO;
 
 import main.GamePanel;
 import main.UtilityTool;
+import main.Disk;
 
 public class TileManager {
 	GamePanel gp;
@@ -33,7 +34,7 @@ public class TileManager {
 		
 		try {
 			
-			InputStream is = new FileInputStream(new File("F:\\java-project-group-8\\My2dGame\\res\\maps\\tiledata.txt"));
+			InputStream is = new FileInputStream(new File(Disk.name+"java-project-group-8\\My2dGame\\res\\maps\\tiledata.txt"));
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
 			
 			//GETTING TILES NAME AND COLLISION INFOR FROM TILEDATA
@@ -70,10 +71,10 @@ public class TileManager {
 	
 		
 		
-		loadMap("F:\\java-project-group-8\\My2dGame\\res\\maps\\worldmap (1).txt",0);
-		loadMap("F:\\java-project-group-8\\My2dGame\\res\\maps\\indoor01.txt",1);
-		loadMap("F:\\java-project-group-8\\My2dGame\\res\\maps\\dungeon01.txt",2);
-		loadMap("F:\\java-project-group-8\\My2dGame\\res\\maps\\dungeon02.txt",3);
+		loadMap( Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\worldmap (1).txt",0);
+		loadMap(Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\indoor01.txt",1);
+		loadMap(Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\dungeon01.txt",2);
+		loadMap(Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\dungeon02.txt",3);
 
 	}
 	
@@ -82,7 +83,7 @@ public class TileManager {
 		UtilityTool uTool = new UtilityTool();
 		try{
 			tile[index] = new Tile();
-			tile[index].image = ImageIO.read(new File("F:\\java-project-group-8\\My2dGame\\res\\tiles\\"+imagePath));
+			tile[index].image = ImageIO.read(new File(Disk.name+ "java-project-group-8\\My2dGame\\res\\tiles\\"+imagePath));
 			tile[index].image = uTool.scaleImage(tile[index].image, gp.tileSize, gp.tileSize);
 			tile[index].collision = collision;
 			
