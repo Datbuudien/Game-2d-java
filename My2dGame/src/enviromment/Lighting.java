@@ -149,7 +149,7 @@ public class Lighting {
 		//DEGUG
 		String situation = "";
 		switch(dayState) {
-		case day: situation = "day";break;
+		case day: situation = "";break;
 		case dusk: situation = "dusk";break;
 		case night: situation = "night";break;
 		case dawn: situation = "dawn";break;

@@ -64,7 +64,7 @@ public class GamePanel extends JPanel implements Runnable{
     public int nextArea;
     public final int outside = 50;
     public final int indoor = 51;
-    public final int dungeon = 50;
+    public final int dungeon = 51;
     
     //FPS
     int FPS = 60;
@@ -155,6 +155,7 @@ public class GamePanel extends JPanel implements Runnable{
     	gameState = titleState;
     	currentArea = outside;
     	tempScreen = new BufferedImage(screenWidth2, screenHeight2,BufferedImage.TYPE_INT_ARGB);
+//    	tempScreen = new BufferedImage(100,100,BufferedImage.TYPE_INT_ARGB);
     	g2  = (Graphics2D)tempScreen.getGraphics();
     	
     	if(fullScreenOn == true)

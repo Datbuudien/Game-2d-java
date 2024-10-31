@@ -17,7 +17,7 @@ public class IT_DestructibleWall extends  InteractiveTile{
 		this.WorldX = gp.tileSize*col;
 		this.WorldY = gp.tileSize*row;
 		down1 = setup("tile_interative\\destructiblewall.png", gp.tileSize, gp.tileSize);
-		life = 3;
+		life = 1;
 		destructible = true;
 	}
 	public boolean isCorrectItem(Entity entity) {

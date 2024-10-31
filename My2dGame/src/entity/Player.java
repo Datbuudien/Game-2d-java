@@ -29,7 +29,7 @@ public class Player extends Entity{
   
     KeyHandler keyH;
 
-    public final int screenX,screenY; //man hinh game -> tao camera
+    public final int screenX,screenY; //man hinh game -> tao camera (kich co cua camer luu y)
     public boolean attackCanceled = false;
     public boolean lightUpdated = false;
     public Player(GamePanel gp, KeyHandler keyH) {
@@ -42,9 +42,10 @@ public class Player extends Entity{
     	
         this.keyH = keyH;
         
-        this.screenX = gp.maxscreenWidth/2;
+        this.screenX = gp.maxscreenWidth/2;  //dieu chinh camera rong khap toan man hinh
         this.screenY = gp.maxscreenHeight/2;
-        
+//        this.screenX =100; 
+//        this.screenY=100;
         
         setDefaultValues();
          
@@ -124,17 +125,17 @@ public class Player extends Entity{
 
 
     	//PLAYER POSITION
-   	 	WorldX = gp.tileSize*23;
+   	 	WorldX = gp.tileSize*23; // pos cua nhan vat
         WorldY = gp.tileSize*19;
-        
+
         solidArea = new Rectangle();
         solidArea.x = 8;
         solidArea.y = 16;
         solidAreaDefaultX = solidArea.x;
         solidAreaDefaultY = solidArea.y; 
         
-        solidArea.width = 32;
-        solidArea.height = 32;
+        solidArea.width = 30; // day la kich co hit box cua nhan vat
+        solidArea.height = 30;
         //Attack Area
 //        attackArea.width = 36;
 //        attackArea.height = 36;
@@ -215,7 +216,7 @@ public class Player extends Entity{
     
     public void update(){
 
-    	if(knockBack == true) {
+    	if(knockBack == true ) {
     		
             collisionOn = false;
         	gp.cChecker.checkTile(this);
@@ -229,7 +230,7 @@ public class Player extends Entity{
     			knockBack = false;
     			speed = defaultSpeed;
     		}
-    		else if(collisionOn == false) {
+    		else if(collisionOn == false ) {
     			switch(knockBackDirection) {
     			case "up": {
     				WorldY -= speed;
@@ -406,7 +407,7 @@ public class Player extends Entity{
     		
     	}
     	else {
-    		if(life <= 0) {
+    		if(life <= 0) {   //gameover_here nhe cac baby
         		gp.gameState = gp.gameoverState;
         		gp.ui.commandNum = -1;
         		gp.stopMusic();
@@ -446,7 +447,7 @@ public class Player extends Entity{
         		if(canObtainItem(gp.obj[gp.currentMap][i])==true) {
         		
         			gp.playSE(1);
-        			text = "Got a"+gp.obj[gp.currentMap][i].name+"!";
+        			text = "Got a "+gp.obj[gp.currentMap][i].name+"!";
         			
         		}else {
     				text = "Cannot carry more !";
@@ -564,8 +565,8 @@ public class Player extends Entity{
 		   level++;
 		   nextLevelExp = nextLevelExp*2;
 		   maxLife+=2;
-		   strength++;
-		   dexterity++;
+		   strength+=2;
+		   dexterity+=2;
 		   attack = getAttack();
 		   defense = getDefense();
 		   

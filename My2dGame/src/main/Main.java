@@ -8,7 +8,7 @@ public class Main {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
         //Game name
-        window.setTitle("2D Adventure");
+        window.setTitle("Game-2D-java-group-8");
 
 //-------------------------------------------------------------
         GamePanel gamePanel = new GamePanel();

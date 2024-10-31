@@ -163,7 +163,7 @@ public class EvenHandler {
 			gp.player.life = gp.player.maxLife;
 			gp.player.mana = gp.player.maxMana;
 			gp.aSetter.setMonster();
-			gp.saveLoad.save();
+			gp.saveLoad.save(); //moi lan bam vao ho nuoc thi save
 		}
 	
 	}

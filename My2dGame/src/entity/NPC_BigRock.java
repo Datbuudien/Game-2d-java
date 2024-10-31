@@ -15,7 +15,7 @@ public class NPC_BigRock extends Entity{
 		super(gp);
 		type = type_npc;
 		direction = "down";
-		speed = 1;
+		speed = 10;
 		name = npcName;
 		solidArea = new Rectangle();
 		solidArea.x = 2;
@@ -141,7 +141,7 @@ public class NPC_BigRock extends Entity{
 	    	
 	    	//IF ALL THE ROCK ON PLATE , IRON DOOR OPEN :))
 	    	
-	    	if(cnt == rockList.size()) {
+	    	if(cnt == 3) {
 	    		
 	    		for(int i=0;i<gp.obj[1].length;i++) {
 	    			

@@ -166,17 +166,17 @@ public class KeyHandler implements KeyListener{
         		showDebugText = false;
         	}
         }
-        if(code == KeyEvent.VK_R) {
-        	switch(gp.currentMap) {
-        	case 0:
-        		gp.TileM.loadMap(Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\worldV3.txt",0);
-        		break;
-        	case 1:
-        		gp.TileM.loadMap(Disk.name +"java-project-group-8D\\My2dGame\\res\\maps\\interior01.txt",0);
-            	break;
-        	}
-        	
-        }
+//        if(code == KeyEvent.VK_R) {
+//        	switch(gp.currentMap) {
+//        	case 0:
+//        		gp.TileM.loadMap(Disk.name+ "java-project-group-8\\My2dGame\\res\\maps\\worldV3.txt",0);
+//        		break;
+//        	case 1:
+//        		gp.TileM.loadMap(Disk.name +"java-project-group-8D\\My2dGame\\res\\maps\\interior01.txt",0);
+//            	break;
+//        	}
+//        	
+//        }
         if(code == KeyEvent.VK_G) {
         	if(godModeOn == false) {
         		godModeOn = true;

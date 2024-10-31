@@ -46,7 +46,7 @@ public class NPC_OldMan extends Entity{
 	    
 	    public void setDialogue() {
 	    	
-	    	dialogues[0][0] = "Hello pik";
+	    	dialogues[0][0] = "Hello gr_8";
 	    	dialogues[0][1] = "You wanna find treasure ?";
 	    	dialogues[0][2] = "I used to be a great sutpid wizard \nbut now ...I'm just a dirty old man !";
 	    	dialogues[0][3] = "Good luck my boiiii";

@@ -29,7 +29,7 @@ public class IT_DryTree extends InteractiveTile{
 	public InteractiveTile getDestroyedForm() {
 		InteractiveTile tile = new IT_Trunk(gp, WorldX/gp.tileSize, WorldY/gp.tileSize);
 		return tile;
-	}
+	} //ve goc cay
 	public Color getParticleColor() {
 		Color color = new Color(65,50,30);
 		return color;

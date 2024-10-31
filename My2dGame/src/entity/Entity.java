@@ -695,7 +695,7 @@ public class Entity {
     public int getScreenY() {
     	return  WorldY - gp.player.WorldY + gp.player.screenY;
     }
-    public boolean inCamera() {
+    public boolean inCamera() { // chinh cho quai vat xuat hien trong tam nhin vision
 	   if(WorldX + gp.tileSize*5 > gp.player.WorldX - gp.player.screenX &&
 				WorldX - gp.tileSize < gp.player.WorldX + gp.player.screenX &&
 				WorldY + gp.tileSize*5 > gp.player.WorldY - gp.player.screenY &&
